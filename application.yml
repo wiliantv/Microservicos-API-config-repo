@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      allow-override: true
+      override-none: true
+server:
+  port: 0
+
+
+
