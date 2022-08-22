@@ -1,0 +1,14 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    renewalPercentThreshold: 0.85
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    eureka-server-port: 8761
+  server:
+    # waitTimeInMsWhenSyncEmpty: 0
+    wait-time-in-ms-when-sync-empty: 0

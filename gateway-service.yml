@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  description: The production API server
+  compression:
+    enabled: true
+    mime-types: application/json,text/css,application/javascript
+    min-response-size: 2048
+
+eureka:
+  instance:
+    # enable to register multiple app instances with a random server port
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  cloud:
+    gateway:
+      discovery: 
+        enabled: true 
+        locator:
+          enabled: false
+springdoc:
+  swagger-ui:
+    path: /docs

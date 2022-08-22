@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+eureka:
+  instance:
+    # enable to register multiple app instances with a random server port
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
